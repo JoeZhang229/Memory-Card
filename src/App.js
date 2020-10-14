@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+
 import Score from './components/Score';
 import Card from './components/Card';
 import images from './components/ImageData';
@@ -15,7 +16,8 @@ function App() {
   const handleClick = (e) => {
     let cardID = e.target.name;
     // Win 
-    if (score === (images.length)) {
+    console.log(images.length)
+    if (score === (images.length - 1)) {
       setGameWin(true);
     }
     //Lose
@@ -26,12 +28,14 @@ function App() {
         }
 
         setScore(0);
+        
         // empty clicked cards array
         setCards([]);
 
       } else {
         // score + 1 for diff card
         setScore(score + 1);
+
         // + 1 to card array
         setCards([...cards, cardID])
       }
@@ -44,13 +48,6 @@ function App() {
     setCards([]);
   }
 
-  // const checkWin = () => {
-  //   return (gameWin ? <GameWin 
-  //     onClick= {handleWin}
-  //   /> 
-  //   : null
-  //   )
-  // }
   if (gameWin) {
     return (
       <GameWin 

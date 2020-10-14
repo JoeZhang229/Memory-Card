@@ -3,6 +3,7 @@ import shuffleCards from '../components/ShuffleCards';
 import cardImages from '../components/ImageData';
 
 const Card = (props) => {
+
     return shuffleCards(cardImages).map(card => (
         <div 
             className='card-div'
