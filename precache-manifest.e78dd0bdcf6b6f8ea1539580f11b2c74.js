@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9653a7893cffd7fb0f3c4579e082ecf",
+    "revision": "5df0ad9e51d0fb1a1f7be2142637d0a5",
     "url": "/Memory-Card/index.html"
   },
   {
-    "revision": "c545d44b8a454330199e",
+    "revision": "8f9777e22d32213e27f6",
     "url": "/Memory-Card/static/css/main.c56e896a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Memory-Card/static/js/2.a2dc1d77.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c545d44b8a454330199e",
-    "url": "/Memory-Card/static/js/main.dcac27fb.chunk.js"
+    "revision": "8f9777e22d32213e27f6",
+    "url": "/Memory-Card/static/js/main.789f196c.chunk.js"
   },
   {
     "revision": "926adae03f0465537250",
