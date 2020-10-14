@@ -15,13 +15,15 @@ function App() {
 
   const handleClick = (e) => {
     let cardID = e.target.name;
+
     // Win 
-    console.log(images.length)
     if (score === (images.length - 1)) {
       setGameWin(true);
     }
+
     //Lose
       if (cards.includes(cardID)) {
+
         //reset score
         if (score > highScore) {
           setHighScore(score);
@@ -42,9 +44,13 @@ function App() {
   }
 
   const handleWin = () => {
+
     setGameWin(false);
+
     setScore(0);
+
     setHighScore(score);
+
     setCards([]);
   }
 
@@ -58,11 +64,14 @@ function App() {
 
   return (
     <div className='App'>
+
       <header>Meme Card</header>
+
       <Score 
         score={score} 
         highScore={highScore}
       />
+
       <div className='game-cards'>
         <Card 
           handleClick={handleClick}
