@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+
+}
+
+header {
+    text-align: center;
+    margin-top: 2%;
+    font-size: xx-large;
+}
+
+div {
+    display: block;
+}
+
+.score {
+    color: white;
+    background-color: rgb(138, 132, 132);
+    border-radius: 0.7rem;
+    position: fixed;
+    padding: 8px;
+    top: 20px;
+    right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.game-cards {
+    margin-top: 2vh;
+    margin-right: 4vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-div {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 2px #555555 solid;
+    border-radius: 1rem;
+    padding: 1%;
+    margin: 1% 2% 1% 2%;
+    cursor: pointer;
+}
+
+.card-div:hover {
+    background-color: thistle;
+    transition: background-color 0.150s linear;
+}
+
+.card-image {
+    height: 100%;
+    width: 100%;
+}
+
+.congrats {
+    animation: fadeIn ease 3s;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 4vw;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif, cursive;
+}
